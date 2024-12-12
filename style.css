@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    position: relative;
+}
+
+    .board div {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #333;
+        font-size: 24px;
+        cursor: pointer;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .board .winning {
+        background-color: #d4edda;
+    }
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .controls input {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .controls button {
+        margin: 5px;
+        padding: 10px 20px;
+    }
+
+#game-message {
+    margin-top: 10px;
+    font-size: 18px;
+}
